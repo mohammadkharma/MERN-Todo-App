@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CreateTodo from "./components/create-todo.component";
 import TodosList from "./components/todos-list.component";
 import EditTodo from "./components/edit-todo.component";
-import logo from "./loupe.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import logo from "./loupe.png";
 
 class App extends Component {
 
@@ -15,17 +15,17 @@ class App extends Component {
         <div className="container">
 
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="/" className="navbar-brand">
-            <img src={logo} width="30" height="30" alt="logo"/>
-            </a>
+            {/* <a className="navbar-brand" href="https://www.google.com/#cns=0" target="_bank">
+              <img src={logo} width="30" height="30" alt="logo" />
+            </a> */}
             <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
             <div>
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
-                  <Link to="/" className="navbar-link">Todos</Link>
+                  <Link to="/" className="nav-link">Todos</Link>
                 </li>
                 <li className="navbar-item">
-                  <Link to="/create" className="navbar-link">Create Todo</Link>
+                  <Link to="/create" className="nav-link">Create Todo</Link>
                 </li>
               </ul>
             </div>
