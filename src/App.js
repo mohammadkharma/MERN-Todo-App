@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CreateTodo from "./components/create-todo.component";
 import TodosList from "./components/todos-list.component";
 import EditTodo from "./components/edit-todo.component";
+import logo from "./loupe.png"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 
@@ -14,9 +15,11 @@ class App extends Component {
         <div className="container">
 
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="/" className="navbar-brand"><h1>TODOS</h1></a>
-            {/* <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link> */}
-            <div className="collapse navbar-collapse">
+            <a href="/" className="navbar-brand">
+            <img src={logo} width="30" height="30" alt="logo"/>
+            </a>
+            <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
+            <div>
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
                   <Link to="/" className="navbar-link">Todos</Link>
